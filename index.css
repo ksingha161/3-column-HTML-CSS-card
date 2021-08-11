@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background: hsla(0, 0%, 100%, 0.75);
+}
+
+.section {
+  margin: 0 auto;
+  margin-top: 20vh;
+  width: 50rem;
+  height: 29rem;
+  display: flex;
+}
+
+.section > * {
+  /* when we do this, you mean you want all of the columns to be the same size */
+  flex-basis: 100%;
+}
+
+.card-1 {
+  border: 1px solid hsl(31, 77%, 52%);
+  background: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card-2 {
+  background: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+  background: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.icon {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.heading {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  color: rgb(245, 241, 241);
+  text-transform: uppercase;
+}
+
+.para {
+  margin: 2rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.learn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  background: rgb(245, 241, 241);
+  color: hsl(31, 77%, 52%);
+  border-radius: 2rem;
+  padding: 1rem;
+  padding-left: 1.1875rem;
+  padding-right: 1.1875rem;
+}
+
+a:hover {
+  background: hsl(31, 77%, 52%);
+  color: rgb(245, 241, 241);
+  border: 2px solid rgb(245, 241, 241);
+  transition: 0.1s ease-in;
+}
+
+.learn-suv > a {
+  color: hsl(184, 100%, 22%);
+}
+
+.learn-suv > a:hover {
+  background: hsl(184, 100%, 22%);
+  color: rgb(245, 241, 241);
+}
+
+.learn-luxury > a {
+  color: hsl(179, 100%, 13%);
+}
+
+.learn-luxury > a:hover {
+  background: hsl(179, 100%, 13%);
+  color: rgb(245, 241, 241);
+}
